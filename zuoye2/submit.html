@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
+    user-scalable=no">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin:0;
+        }
+        .con{
+            width: 1920px;
+            margin: 0 auto;
+        }
+        .header{
+            height: 130px;
+            border-bottom: 2px solid #6f6d6d;
+        }
+        .header .header_back{
+            width: 170px;
+            height: 130px;
+            background: url(zc_h_1.png) no-repeat;
+            background-size: contain;
+            float: left;
+            margin-left: 320px;
+        }
+        .header .header_back1{
+            font-size: 45px;
+            line-height: 130px;
+            margin-left: 500px;
+            display: inline-block;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .banner{
+            box-sizing: border-box;
+            height: 625px;
+            background: url(beijing.jpg) no-repeat;
+            padding-top: 100px;
+            background-size: cover;
+        }
+        .bottoms{
+            height: 266px;
+            color: #ffffff;
+            padding-top: 60px;
+            padding-left: 360px;
+            box-sizing: border-box;
+        }
+        .bs{
+            width: 1250px;
+            height: 126px;
+            border-top: 1px solid #d5d5d5;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .imgs{
+            margin-left: 40px;
+            margin-right: 40px;
+            width: 106px;
+            height: 80px;
+            background: url(https://www.amwaynet.com.cn/NEWEBIZ_RESOURCE/images/footerlogo.png) no-repeat;
+            float: left;
+            border-right: 1px solid #6f6d6d;
+        }
+        .bottoms .bs li{
+            color: #6f6d6d;
+            float: left;
+            display: block;
+            height: 20px;
+            margin-top: 20px;
+            margin-left: 12px;
+            border-right: 1px solid #6f6d6d;
+            font-size: 18px;
+            padding-right: 5px;
+            box-sizing: border-box;
+            line-height: 20px;
+        }
+        .left{
+            margin-left: 20px;
+        }
+        .blue{
+
+            color: blue;
+        }
+        .size{
+            font-size: 12px;
+        }
+        .boxs{
+            width: 1200px;
+            height: 388px;
+            border: 1px solid #6f6d6d;
+            background-color: #f6f6f6;
+            margin: auto;
+            
+          
+        }
+        .yes_jpg{
+            width:100px;
+            height:100px;
+            float:left;
+            margin-left: 100px;
+        }
+        .color{
+            display: block;
+            height: 100px;
+            color: orange;
+            font-size: 30px;
+            line-height: 100px;
+        }
+        .banner_1{
+            width: 600px;
+            height: 128px;
+            border-bottom: 1px solid #d5d5d5;
+            padding: 14px;
+            box-sizing: border-box;
+            margin: auto;
+        }
+        .banner_2{
+            width: 400px;
+            display: block;
+            margin: auto;
+            font-size: 20px;
+            padding: 80px;
+            line-height: calc(388px-128px);
+        }
+      
+        
+    </style>
+    
+</head>
+<body>
+
+    <div class="banner">
+        
+        <div class="boxs">
+            <div class = "banner_1">
+                <img src="submit2.jpg" class = "yes_jpg" >
+                <p class = "color">恭喜您注册成功</p>
+            </div>
+            <div class = "banner_2" id="gogo"></div>
+            
+            
+        </div>
+
+    <script>
+        var div = document.querySelector('#gogo');
+        var t = 5;
+        fn();
+        setInterval(fn, 1000);
+        function fn() {
+            if (t === 0){
+            location.href = 'index.html';
+        }    
+            div.innerHTML = '将于'+t+'秒后跳转至新页面';
+            t--;
+        } 
+    </script>
+</body>
+</html>
